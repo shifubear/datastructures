@@ -1,0 +1,31 @@
+/*
+ * BinNode.h
+ *
+ *  Created on: Feb 21, 2017
+ *      Author: sfukuzawa14
+ */
+
+#ifndef BINNODE_H_
+#define BINNODE_H_
+
+typedef int DataType;
+
+class BinNode {
+public:
+	DataType data;
+	BinNode* left;
+	BinNode* right;
+
+	// Constructors
+	// 	Default
+	BinNode()
+	: left(0), right(0) {};
+
+	// Explicit
+	BinNode(DataType item)
+	: data(item), left(0), right(0) {};
+
+	virtual ~BinNode();
+};
+
+#endif /* BINNODE_H_ */

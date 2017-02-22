@@ -1,0 +1,18 @@
+/*
+ * BST.cpp
+ *
+ *  Created on: Feb 21, 2017
+ *      Author: sfukuzawa14
+ */
+
+#include "BST.h"
+
+BST::BST() {
+	// TODO Auto-generated constructor stub
+
+}
+
+BST::~BST() {
+	// TODO Auto-generated destructor stub
+}
+

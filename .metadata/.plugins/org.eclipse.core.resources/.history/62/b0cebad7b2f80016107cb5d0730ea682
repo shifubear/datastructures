@@ -1,0 +1,17 @@
+/*
+ * BST.h
+ *
+ *  Created on: Feb 21, 2017
+ *      Author: sfukuzawa14
+ */
+
+#ifndef BST_H_
+#define BST_H_
+
+class BST {
+public:
+	BST();
+	virtual ~BST();
+};
+
+#endif /* BST_H_ */

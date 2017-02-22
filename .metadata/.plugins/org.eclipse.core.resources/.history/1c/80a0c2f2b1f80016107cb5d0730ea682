@@ -1,0 +1,18 @@
+/*
+ * BinNode.cpp
+ *
+ *  Created on: Feb 21, 2017
+ *      Author: sfukuzawa14
+ */
+
+#include "BinNode.h"
+
+BinNode::BinNode() {
+	// TODO Auto-generated constructor stub
+
+}
+
+BinNode::~BinNode() {
+	// TODO Auto-generated destructor stub
+}
+

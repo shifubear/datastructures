@@ -1,0 +1,236 @@
+22:41:36 **** Incremental Build of configuration Debug for project BinaryTrees ****
+make all 
+make: Nothing to be done for `all'.
+22:41:39 **** Incremental Build of configuration Debug for project BinaryTrees ****
+make all 
+make: Nothing to be done for `all'.
+22:45:13 **** Auto Build of configuration Debug for project BinaryTrees ****
+make all 
+Building file: ../BinNode.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BinNode.d" -MT"BinNode.o" -o "BinNode.o" "../BinNode.cpp"
+Finished building: ../BinNode.cpp
+ 
+Building target: BinaryTrees
+Invoking: Cross G++ Linker
+g++  -o "BinaryTrees"  ./BinNode.o ./main.o   
+Finished building target: BinaryTrees
+ 
+22:47:16 **** Auto Build of configuration Debug for project BinaryTrees ****
+make all 
+Building file: ../BinNode.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BinNode.d" -MT"BinNode.o" -o "BinNode.o" "../BinNode.cpp"
+In file included from ../BinNode.cpp:8:
+../BinNode.h:15:2: warning: declaration does not declare anything [-Wmissing-declarations]
+        DataType data;
+        ^~~~~~~~
+../BinNode.h:11:18: note: expanded from macro 'DataType'
+#define DataType int;
+                 ^~~
+../BinNode.h:15:11: error: C++ requires a type specifier for all declarations
+        DataType data;
+                 ^
+../BinNode.h:25:10: error: expected ')'
+        BinNode(DataType item)
+                ^
+../BinNode.h:11:21: note: expanded from macro 'DataType'
+#define DataType int;
+                    ^
+../BinNode.h:25:9: note: to match this '('
+        BinNode(DataType item)
+               ^
+../BinNode.h:25:19: error: unknown type name 'item'
+        BinNode(DataType item)
+                         ^
+../BinNode.h:25:23: error: expected member name or ';' after declaration specifiers
+        BinNode(DataType item)
+                         ~~~~^
+../BinNode.cpp:10:10: error: redefinition of 'BinNode'
+BinNode::BinNode() {
+         ^
+../BinNode.h:21:2: note: previous definition is here
+        BinNode()
+        ^
+1 warning and 5 errors generated.
+make: *** [BinNode.o] Error 1
+22:47:59 **** Auto Build of configuration Debug for project BinaryTrees ****
+make all 
+Building file: ../BinNode.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BinNode.d" -MT"BinNode.o" -o "BinNode.o" "../BinNode.cpp"
+In file included from ../BinNode.cpp:8:
+../BinNode.h:15:2: error: unknown type name 'DataType'
+        DataType data;
+        ^
+../BinNode.h:25:10: error: unknown type name 'DataType'
+        BinNode(DataType item)
+                ^
+../BinNode.cpp:10:10: error: redefinition of 'BinNode'
+BinNode::BinNode() {
+         ^
+../BinNode.h:21:2: note: previous definition is here
+        BinNode()
+        ^
+3 errors generated.
+make: *** [BinNode.o] Error 1
+22:49:24 **** Auto Build of configuration Debug for project BinaryTrees ****
+make all 
+Building file: ../BinNode.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BinNode.d" -MT"BinNode.o" -o "BinNode.o" "../BinNode.cpp"
+../BinNode.cpp:10:10: error: redefinition of 'BinNode'
+BinNode::BinNode() {
+         ^
+../BinNode.h:21:2: note: previous definition is here
+        BinNode()
+        ^
+1 error generated.
+make: *** [BinNode.o] Error 1
+22:49:45 **** Auto Build of configuration Debug for project BinaryTrees ****
+make all 
+Building file: ../BinNode.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BinNode.d" -MT"BinNode.o" -o "BinNode.o" "../BinNode.cpp"
+Finished building: ../BinNode.cpp
+ 
+Building target: BinaryTrees
+Invoking: Cross G++ Linker
+g++  -o "BinaryTrees"  ./BinNode.o ./main.o   
+Finished building target: BinaryTrees
+ 
+22:52:18 **** Auto Build of configuration Debug for project BinaryTrees ****
+make all 
+Building target: BinaryTrees
+Invoking: Cross G++ Linker
+g++  -o "BinaryTrees"  ./main.o   
+Finished building target: BinaryTrees
+ 
+22:52:29 **** Auto Build of configuration Debug for project BinaryTrees ****
+make all 
+Building file: ../BST.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BST.d" -MT"BST.o" -o "BST.o" "../BST.cpp"
+Finished building: ../BST.cpp
+ 
+Building target: BinaryTrees
+Invoking: Cross G++ Linker
+g++  -o "BinaryTrees"  ./BST.o ./main.o   
+Finished building target: BinaryTrees
+ 
+22:56:09 **** Auto Build of configuration Debug for project BinaryTrees ****
+make all 
+Building file: ../BST.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BST.d" -MT"BST.o" -o "BST.o" "../BST.cpp"
+../BST.cpp:10:1: error: 'BST' is not a class, namespace, or enumeration
+BST::BST() {
+^
+../BST.h:12:7: note: 'BST' declared here
+class BST {
+      ^
+../BST.cpp:15:1: error: 'BST' is not a class, namespace, or enumeration
+BST::~BST() {
+^
+../BST.h:12:7: note: 'BST' declared here
+class BST {
+      ^
+2 errors generated.
+make: *** [BST.o] Error 1
+22:57:30 **** Auto Build of configuration Debug for project BinaryTrees ****
+make all 
+Building file: ../BST.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BST.d" -MT"BST.o" -o "BST.o" "../BST.cpp"
+In file included from ../BST.cpp:8:
+../BST.h:50:1: error: unexpected ':' in nested name specifier; did you mean '::'?
+: myRoot(0)
+^
+::
+../BST.h:50:3: error: C++ requires a type specifier for all declarations
+: myRoot(0)
+  ^
+../BST.h:49:1: error: 'inline' can only appear on functions
+inline BST<DataType>::BST
+^
+../BST.h:50:3: error: non-static data member defined out-of-line
+: myRoot(0)
+~ ^
+../BST.h:50:12: error: expected ';' at end of declaration
+: myRoot(0)
+           ^
+           ;
+../BST.h:51:3: error: expected unqualified-id
+  {}
+  ^
+../BST.h:55:19: error: use of undeclared identifier 'NULL'
+{return myRoot == NULL; }
+                  ^
+../BST.cpp:10:1: error: 'BST' is not a class, namespace, or enumeration
+BST::BST() {
+^
+../BST.h:12:7: note: 'BST' declared here
+class BST {
+      ^
+../BST.cpp:15:1: error: 'BST' is not a class, namespace, or enumeration
+BST::~BST() {
+^
+../BST.h:12:7: note: 'BST' declared here
+class BST {
+      ^
+9 errors generated.
+make: *** [BST.o] Error 1
+22:57:42 **** Auto Build of configuration Debug for project BinaryTrees ****
+make all 
+Building file: ../BST.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BST.d" -MT"BST.o" -o "BST.o" "../BST.cpp"
+In file included from ../BST.cpp:8:
+../BST.h:55:19: error: use of undeclared identifier 'NULL'
+{return myRoot == NULL; }
+                  ^
+../BST.cpp:10:1: error: 'BST' is not a class, namespace, or enumeration
+BST::BST() {
+^
+../BST.h:12:7: note: 'BST' declared here
+class BST {
+      ^
+../BST.cpp:15:1: error: 'BST' is not a class, namespace, or enumeration
+BST::~BST() {
+^
+../BST.h:12:7: note: 'BST' declared here
+class BST {
+      ^
+3 errors generated.
+make: *** [BST.o] Error 1
+22:57:50 **** Auto Build of configuration Debug for project BinaryTrees ****
+make all 
+Building file: ../BST.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BST.d" -MT"BST.o" -o "BST.o" "../BST.cpp"
+../BST.cpp:10:1: error: 'BST' is not a class, namespace, or enumeration
+BST::BST() {
+^
+../BST.h:12:7: note: 'BST' declared here
+class BST {
+      ^
+../BST.cpp:15:1: error: 'BST' is not a class, namespace, or enumeration
+BST::~BST() {
+^
+../BST.h:12:7: note: 'BST' declared here
+class BST {
+      ^
+2 errors generated.
+make: *** [BST.o] Error 1
+22:58:07 **** Auto Build of configuration Debug for project BinaryTrees ****
+make all 
+Building file: ../BST.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BST.d" -MT"BST.o" -o "BST.o" "../BST.cpp"
+Finished building: ../BST.cpp
+ 
+Building target: BinaryTrees
+Invoking: Cross G++ Linker
+g++  -o "BinaryTrees"  ./BST.o ./main.o   
+Finished building target: BinaryTrees
+ 

@@ -1,0 +1,17 @@
+/*
+ * BinNode.h
+ *
+ *  Created on: Feb 21, 2017
+ *      Author: sfukuzawa14
+ */
+
+#ifndef BINNODE_H_
+#define BINNODE_H_
+
+class BinNode {
+public:
+	BinNode();
+	virtual ~BinNode();
+};
+
+#endif /* BINNODE_H_ */

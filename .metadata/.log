@@ -1,0 +1,26 @@
+!SESSION 2017-02-21 22:24:32.279 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -keyring /Users/sfukuzawa14/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.cpp.product -keyring /Users/sfukuzawa14/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-02-21 22:28:45.080
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-02-21 22:33:45.908
+!MESSAGE Indexed 'BinaryTrees' (0 sources, 0 headers) in 0.003 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!SESSION 2017-02-21 22:38:26.058 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -keyring /Users/sfukuzawa14/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.cpp.product -keyring /Users/sfukuzawa14/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-02-21 22:38:52.039
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-02-21 22:40:32.504
+!MESSAGE Indexed 'BinaryTrees' (2 sources, 173 headers) in 14 sec: 22,181 declarations; 45,043 references; 0 unresolved inclusions; 9 syntax errors; 55 unresolved names (0.082%)
