@@ -1,0 +1,22 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Feb 22, 2017
+ *      Author: sfukuzawa14
+ */
+
+#include <iostream>
+using namespace std;
+
+template <typename DataType>
+struct SLLNode {
+	DataType data;
+	SLLNode* next;
+};
+
+int main() {
+	cout << "Hello world" << endl;
+}
+
+
+

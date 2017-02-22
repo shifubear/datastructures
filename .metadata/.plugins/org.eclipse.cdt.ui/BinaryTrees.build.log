@@ -1,15 +1,6 @@
-22:58:07 **** Auto Build of configuration Debug for project BinaryTrees ****
+10:29:48 **** Incremental Build of configuration Debug for project BinaryTrees ****
 make all 
-Building file: ../BST.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BST.d" -MT"BST.o" -o "BST.o" "../BST.cpp"
-Finished building: ../BST.cpp
- 
-Building target: BinaryTrees
-Invoking: Cross G++ Linker
-g++  -o "BinaryTrees"  ./BST.o ./main.o   
-Finished building target: BinaryTrees
- 
+make: Nothing to be done for `all'.
 
-22:58:08 Build Finished (took 715ms)
+10:29:49 Build Finished (took 128ms)
 
