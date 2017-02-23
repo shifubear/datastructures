@@ -1,0 +1,22 @@
+/*
+ * LinkedList.cpp
+ *
+ *  Created on: Feb 22, 2017
+ *      Author: sfukuzawa14
+ */
+
+#include "LinkedList.h"
+#include <iostream>
+
+template <typename DataType>
+LinkedList<DataType>::LinkedList() {
+	// TODO Auto-generated constructor stub
+	size = DataType();
+	head = NULL;
+}
+
+LinkedList::~LinkedList() {
+	// TODO Auto-generated destructor stub
+	delete head;
+}
+

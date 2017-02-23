@@ -1,0 +1,23 @@
+/*
+ * LinkedListTester.cpp
+ *
+ *  Created on: Feb 22, 2017
+ *      Author: sfukuzawa14
+ */
+
+#include "LinkedListTester.h"
+#include <iostream>
+#include <cassert>
+using namespace std;
+
+void LinkedListTester::runTests() {
+	// TODO Auto-generated constructor stub
+	cout << "Running tests for LinkedLists..." << endl;
+	testConstructors();
+
+	cout << "All tests passed!!! " << endl;
+}
+
+void LinkedListTester::testConstructors() {
+
+}

@@ -1,0 +1,23 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Feb 22, 2017
+ *      Author: sfukuzawa14
+ */
+
+#include "LinkedListTester.h"
+#include <iostream>
+using namespace std;
+
+
+
+int main() {
+
+	LinkedListTester tester;
+	tester.runTests();
+
+	cout << "Hello world" << endl;
+}
+
+
+

@@ -1,0 +1,14 @@
+/*
+ * LinkedListTester.cpp
+ *
+ *  Created on: Feb 22, 2017
+ *      Author: sfukuzawa14
+ */
+
+#include "LinkedListTester.h"
+
+LinkedListTester::LinkedListTester() {
+	// TODO Auto-generated constructor stub
+
+}
+

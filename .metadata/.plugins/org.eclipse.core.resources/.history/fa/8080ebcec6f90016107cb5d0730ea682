@@ -1,0 +1,29 @@
+/*
+ * LinkedList.h
+ *
+ *  Created on: Feb 22, 2017
+ *      Author: sfukuzawa14
+ */
+
+#ifndef LINKEDLIST_H_
+#define LINKEDLIST_H_
+
+template <typename DataType>
+class LinkedList {
+public:
+	LinkedList();
+	~LinkedList();
+
+private:
+	struct SLLNode {
+		DataType data;
+		SLLNode* next;
+	};
+
+	SLLNode* head;
+	unsigned size;
+
+	friend class LinkedListTester;
+};
+
+#endif /* LINKEDLIST_H_ */
