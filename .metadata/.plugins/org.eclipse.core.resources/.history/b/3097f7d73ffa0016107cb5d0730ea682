@@ -1,0 +1,117 @@
+/*
+ * LinkedList.h
+ *
+ *  Created on: Feb 22, 2017
+ *      Author: sfukuzawa14
+ */
+
+#ifndef LINKEDLIST_H_
+#define LINKEDLIST_H_
+
+#include <iostream>
+
+template <class T>
+class LinkedList {
+
+public:
+	LinkedList();
+	LinkedList(T data);
+	LinkedList(const LinkedList& original);
+	~LinkedList();
+
+	unsigned getSize() const { return _size; }
+
+	LinkedList& operator=(const LinkedList& original);
+
+
+	void insert(T data);
+	void print() const;
+
+private:
+	struct SLLNode {
+		T data;
+		SLLNode* next;
+	};
+
+	SLLNode* _head;
+	unsigned _size;
+
+	void copy(const LinkedList& original);
+
+	friend class LinkedListTester;
+};
+
+template <typename T>
+LinkedList<T>::LinkedList() {
+	// TODO Auto-generated constructor stub
+	_size = 0;
+	_head = NULL;
+}
+
+template <typename T>
+LinkedList<T>::LinkedList(T data) {
+	_size = 1;
+	SLLNode* newNode = new SLLNode;
+	newNode->data = data;
+	_head = newNode;
+}
+
+template <typename T>
+LinkedList<T>::LinkedList(const LinkedList& original) {
+	copy(original);
+}
+
+template <typename T>
+LinkedList<T>::~LinkedList() {
+	// TODO Auto-generated destructor stub
+	delete _head;
+}
+
+template <typename T>
+LinkedList<T>& LinkedList<T>::operator=(const LinkedList& original) {
+	copy(original);
+	return *this;
+}
+
+template <typename T>
+void LinkedList<T>::print() const {
+	if (_head == NULL) {
+		std::cout << "List is empty" << std::endl;
+		return;
+	}
+	SLLNode* copy = _head;
+	for (int i = 0; i < _size; i++) {
+		std::cout << copy->data << " " << std::flush;
+		copy = copy->next;
+	}
+}
+
+template <typename T>
+void LinkedList<T>::insert(T data) {
+	_size++;
+	std::cout << "Creating new Node" << std::endl;
+	SLLNode* newNode = new SLLNode;
+	std::cout << "Created new Node" << std::endl;
+	newNode->data = data;
+	std::cout << "Added data to new Node" << std::endl;
+	if (_head == NULL)
+		_head = newNode;
+	else
+		_head->next = newNode;
+	std::cout << "Update value of head" << std::endl;
+}
+
+
+template<typename T>
+void LinkedList<T>::copy(const LinkedList& original) {
+	_size = original._size;
+	if (_size == 0) {
+		_head = NULL;
+	} else {
+		SLLNode* newNode = new SLLNode;
+		newNode->data = original._head->data;
+		_head = newNode;
+	}
+}
+
+#endif /* LINKEDLIST_H_ */

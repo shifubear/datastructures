@@ -1,6 +1,15 @@
-12:28:44 **** Incremental Build of configuration Debug for project LinkedList ****
+22:19:06 **** Auto Build of configuration Debug for project LinkedList ****
 make all 
-make: Nothing to be done for `all'.
+Building file: ../LinkedListTester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"LinkedListTester.d" -MT"LinkedListTester.o" -o "LinkedListTester.o" "../LinkedListTester.cpp"
+Finished building: ../LinkedListTester.cpp
+ 
+Building target: LinkedList
+Invoking: MacOS X C++ Linker
+g++  -o "LinkedList"  ./LinkedList.o ./LinkedListTester.o ./main.o   
+Finished building target: LinkedList
+ 
 
-12:28:44 Build Finished (took 106ms)
+22:19:07 Build Finished (took 607ms)
 

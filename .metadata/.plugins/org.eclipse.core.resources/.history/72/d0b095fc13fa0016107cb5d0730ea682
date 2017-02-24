@@ -1,0 +1,87 @@
+/*
+ * LinkedListTester.cpp
+ *
+ *  Created on: Feb 22, 2017
+ *      Author: sfukuzawa14
+ */
+
+#include "LinkedListTester.h"
+#include <iostream>
+#include <cassert>
+using namespace std;
+
+void LinkedListTester::runTests() {
+	// TODO Auto-generated constructor stub
+	cout << "Running tests for LinkedLists..." << endl;
+	testConstructors();
+	testCopy();
+	testAppend();
+	cout << "All tests passed!!! " << endl;
+}
+
+void LinkedListTester::testConstructors() {
+	cout << "Testing constructors... " << flush;
+
+	// Default constructor
+	LinkedList<int> ll0;
+	assert( ll0._size == 0 );
+	assert( ll0._head == NULL );
+	cout << " 0 " << flush;
+
+	// Explicit value constructor (sets value of first node)
+	LinkedList<int> ll1(5);
+	assert( ll1._size == 1 );
+	assert( ll1._head->data == 5 );
+	cout << " 1 " << flush;
+
+	// Copy constructor
+	//   Copying a filled list to a new list
+	LinkedList<int> ll2(ll1);
+	assert( ll2._size == 1 );
+	assert( ll2._head->data == 5 );
+	assert( ll2._head != ll1._head );
+	cout << " 2 " << flush;
+
+	//   Copying an empty list to a new list
+	LinkedList<int> ll3(ll0);
+	assert( ll3._size == 0 );
+	assert( ll3._head == NULL );
+	cout << " 3 " << flush;
+
+	cout << " Passed!" << endl;
+}
+
+void LinkedListTester::testCopy() {
+	cout << "Testing constructors... " << flush;
+
+	// Default constructor
+	LinkedList<int> ll0;
+
+	// Explicit value constructor (sets value of first node)
+	LinkedList<int> ll1(5);
+
+	// Copy constructor
+	//   Copying a filled list to a new list
+	LinkedList<int> ll2;
+	ll2 = ll1;
+	assert( ll2._size == 1 );
+	assert( ll2._head->data == 5 );
+	assert( ll2._head != ll1._head );
+	cout << " 2 " << flush;
+
+	//   Copying an empty list to a new list
+	LinkedList<int> ll3;
+	ll3 = ll0;
+	assert( ll3._size == 0 );
+	assert( ll3._head == NULL );
+	cout << " 3 " << flush;
+
+	cout << " Passed!" << endl;
+}
+
+void LinkedListTester::testAppend() {
+	cout << "Testing append... " << flush;
+
+	cout << " Passed!" << endl;
+}
+

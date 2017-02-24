@@ -14,6 +14,8 @@ class LinkedListTester {
 public:
 	void runTests();
 	void testConstructors();
+	void testInsert();
+	void testCopy();
 };
 
 #endif /* LINKEDLISTTESTER_H_ */

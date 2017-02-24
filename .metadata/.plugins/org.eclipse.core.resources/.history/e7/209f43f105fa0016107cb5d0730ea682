@@ -1,0 +1,80 @@
+/*
+ * LinkedList.h
+ *
+ *  Created on: Feb 22, 2017
+ *      Author: sfukuzawa14
+ */
+
+#ifndef LINKEDLIST_H_
+#define LINKEDLIST_H_
+
+#include <iostream>
+
+template <class T>
+class LinkedList {
+
+public:
+	LinkedList();
+	LinkedList(T data);
+	~LinkedList();
+
+	void print() const;
+
+	void append(T data);
+
+private:
+	struct SLLNode {
+		T data;
+		SLLNode* next;
+	};
+
+	SLLNode* _head;
+	unsigned _size;
+
+	friend class LinkedListTester;
+};
+
+template <typename T>
+LinkedList<T>::LinkedList() {
+	// TODO Auto-generated constructor stub
+	_size = 0;
+	_head = NULL;
+}
+
+template <typename T>
+LinkedList<T>::LinkedList(T data) {
+	_size = 1;
+	SLLNode* newNode = new SLLNode;
+	newNode->data = data;
+	_head = newNode;
+}
+
+template <typename T>
+LinkedList<T>::~LinkedList() {
+	// TODO Auto-generated destructor stub
+	delete _head;
+}
+
+template <typename T>
+void LinkedList<T>::print() const {
+	if (head == NULL) {
+		cout << "List is empty" << endl;
+		return;
+	}
+	SLLNode* copy = head;
+	while (copy != NULL) {
+		cout << copy->data << " " << flush;
+		copy = copy->next;
+	}
+}
+
+template <typename T>
+void LinkedList<T>::append(T data) {
+	size++;
+	SLLNode* newNode = new SLLNode;
+	newNode->data = data;
+	head->next = newNode;
+}
+
+
+#endif /* LINKEDLIST_H_ */

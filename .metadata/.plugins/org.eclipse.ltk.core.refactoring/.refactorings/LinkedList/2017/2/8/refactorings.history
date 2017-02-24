@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Create method copy" description="Extract Method Refactoring" fileName="file:/Users/sfukuzawa14/Desktop/datastructures/LinkedList/LinkedList.h" flags="4" id="org.eclipse.cdt.internal.ui.refactoring.extractfunction.ExtractFunctionRefactoring" name="copy" replaceDuplicates="false" selection="868,164" stamp="1487887290767" visibility="private"/>
+</session>

@@ -10,22 +10,33 @@
 
 #include <iostream>
 
-template <class DataType>
+template <class T>
 class LinkedList {
 
 public:
 	LinkedList();
-	LinkedList(DataType data);
+	LinkedList(T data);
+	LinkedList(const LinkedList& original);
 	~LinkedList();
+
+	unsigned getSize() const { return _size; }
+
+	LinkedList& operator=(const LinkedList& original);
+
+
+	void insert(T data);
+	void print() const;
 
 private:
 	struct SLLNode {
-		DataType data;
+		T data;
 		SLLNode* next;
 	};
 
-	SLLNode* head;
-	unsigned size;
+	SLLNode* _head;
+	unsigned _size;
+
+	void copy(const LinkedList& original);
 
 	friend class LinkedListTester;
 };
@@ -33,23 +44,70 @@ private:
 template <typename T>
 LinkedList<T>::LinkedList() {
 	// TODO Auto-generated constructor stub
-	size = 0;
-	head = NULL;
+	_size = 0;
+	_head = NULL;
 }
 
 template <typename T>
 LinkedList<T>::LinkedList(T data) {
-	size = 1;
+	_size = 1;
 	SLLNode* newNode = new SLLNode;
 	newNode->data = data;
-	head = newNode;
+	_head = newNode;
+}
+
+template <typename T>
+LinkedList<T>::LinkedList(const LinkedList& original) {
+	copy(original);
 }
 
 template <typename T>
 LinkedList<T>::~LinkedList() {
 	// TODO Auto-generated destructor stub
-	delete head;
+	delete _head;
 }
 
+template <typename T>
+LinkedList<T>& LinkedList<T>::operator=(const LinkedList& original) {
+	copy(original);
+	return *this;
+}
+
+template <typename T>
+void LinkedList<T>::print() const {
+	if (_head == NULL) {
+		std::cout << "List is empty" << std::endl;
+		return;
+	}
+	SLLNode* copy = _head;
+	for (int i = 0; i < _size; i++) {
+		std::cout << copy->data << " " << std::flush;
+		copy = copy->next;
+	}
+}
+
+template <typename T>
+void LinkedList<T>::insert(T data) {
+	_size++;
+	SLLNode* newNode = new SLLNode;
+	newNode->data = data;
+	if (_head == NULL)
+		_head = newNode;
+	else
+		_head->next = newNode;
+}
+
+
+template<typename T>
+void LinkedList<T>::copy(const LinkedList& original) {
+	_size = original._size;
+	if (_size == 0) {
+		_head = NULL;
+	} else {
+		SLLNode* newNode = new SLLNode;
+		newNode->data = original._head->data;
+		_head = newNode;
+	}
+}
 
 #endif /* LINKEDLIST_H_ */
